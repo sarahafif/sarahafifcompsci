@@ -1,0 +1,22 @@
+import random
+# this will allow me to generate a random answer after the user inputs a question
+import time
+print("Hello and welcome to Magic Eight Ball")
+# i entered an intro sentence just to be fun
+answers = [ "Yes", "Maybe so", "Possibly", "No", "Ask Again", "I am unsure", "Absolutely"]
+
+# i made a list of responses that will generate randomly using print(random.choice((answers))
+# i used brackets instead of parenthesis because it is a list
+
+def question1():
+    q1 = input("Ask me a question and your fortune will be revealed")
+# the user will be able to input their own question because of the input function
+    print("Hmmmmm give me a second to process this")
+# this is a print statement that will display what's in the parenthesis to create the illusion that the computer is processing
+    time.sleep(4)
+# this will delay the code 4 seconds to allow the magic 8 ball to "process it" and make it look like the computer is thinking
+    print(random.choice((answers)))
+# this will generate a random answer from the list of answers above, i used random.choice because it is a list not numbers
+question1()
+# this calls the defined function, allowing it to run
+q2 = input("Do you want to ask another question? answer yes or no ")
